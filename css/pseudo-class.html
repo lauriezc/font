@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8" content="text/html">
+        <title></title>
+<style>
+.item {
+    width:30%;
+    display:inline-block;
+}
+.item a {
+    display:block;
+}
+.link:link {
+    color:red;
+}
+.hover:hover {
+    color:red;
+}
+.active:active {
+    color:red;
+}
+.visited:visited {
+    color:red;
+}
+.focus:focus {
+    border:3px solid red;
+}
+.first-child a:first-child {
+    color:red;
+}
+
+
+.after:after {
+    content:'   after-test';
+    color:red;
+}
+.first-letter:first-letter {
+    color:red;
+}
+.first-line:first-line {
+    color:red;
+}
+.before:before {
+    content:'before-test   ';
+    color:red;
+}
+
+</style>
+    </head>
+    <body>
+        <h1>伪类</h1>
+        <div class="item">
+            <h3>:link</h3>
+            <a href="#">默认样式</a>
+            <a href="javascript:Math.Random()" class="link">:link</a>
+        </div>
+        <div class="item">
+            <h3>:hover</h3>
+            <a href="#">默认样式</a>
+            <a href="javascript:Math.Random()" class="hover">:link</a>
+        </div>
+        <div class="item">
+            <h3>:active</h3>
+            <a href="#">默认样式</a>
+            <a href="#" class="active">:active</a>
+        </div>
+        <div class="item">
+            <h3>:visited</h3>
+            <a href="#">默认样式</a>
+            <a href="#" class="visited">:visited</a>
+        </div>
+        <div class="item">
+            <h3>:focus</h3>
+            <input type="text" placeholder="默认样式"/>
+            <input type="text" class="focus" placeholder="focus"/>
+        </div>
+        <div class="item">
+            <h3>:first-child</h3>
+            <a href="#">默认样式</a>
+            <div class="first-child">
+            <a href="#">:first-child1</a>
+            <a href="javascript:Math.Random()">:first-child2</a>
+            </div>
+        </div>
+        
+        <h1>伪对象</h1>
+        <div class="item">
+            <h3>:after</h3>
+            <a href="#">默认样式</a>
+            <a href="javascript:Math.Random()" class="after">:after</a>
+            <a href="javascript:Math.Random()">:after1</a>
+            <a href="javascript:Math.Random()">:after2</a>
+            <a href="javascript:Math.Random()">:after3</a>
+        </div>
+        <div class="item">
+            <h3>:first-letter</h3>
+            <a href="#">默认样式</a>
+            <a href="javascript:Math.Random()" class="first-letter">:link</a>
+        </div>
+        <div class="item">
+            <h3>:first-line</h3>
+            <a href="#">默认样式</a>
+            <a href="javascript:Math.Random()" class="first-line">:link
+                <p>abc</p>
+            </a>
+        </div>
+        <div class="item">
+            <h3>:before</h3>
+            <a href="#">默认样式</a>
+            <a href="javascript:Math.Random()" class="before">:before</a>
+        </div>
+    </body>
+</html>
